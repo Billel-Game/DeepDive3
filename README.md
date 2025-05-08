@@ -32,6 +32,10 @@ Een Bingo-spel op het web voor noorderpoort deepdive.
     Open index.html in je browser.
 
         Je hebt geen server of build tools nodig — gewoon openen in de browser!
+        
+🎥 OneDrive Video
+
+    <video link hier>
 
 📁 Bestandsstructuur
 
