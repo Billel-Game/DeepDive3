@@ -40,7 +40,9 @@ Een Bingo-spel op het web voor noorderpoort deepdive.
 📁 Bestandsstructuur
 
 /project-root
+
 │
+
 ├── index.html             # Hoofdpagina met spel en UI
 
 ├── flag.png               # Achtergrondafbeelding voor de bingo-vakken
