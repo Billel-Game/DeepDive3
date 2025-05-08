@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bingo Board with Map</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            groningenGreen: '#00a859',
+            groningenWhite: '#ffffff',
+            groningenGray: '#e5e7eb',
+            groningenDark: '#1f2937'
+          }
+        }
+      }
+    };
+  </script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-groningenDark min-h-screen flex flex-col items-center justify-center relative">
+  <div class="text-center px-4">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-groningenGreen">Bingo Board</h1>
+
+
+    <div class="mb-4">
+      <label for="playerName" class="text-white mr-2">Naam:</label>
+      <input type="text" id="playerName" placeholder="Vul je groep naam in" class="px-2 py-1 rounded" />
+    </div>
+
+    <h1 class="text-white text-2xl font-bold mb-2">Als je klaar bent</h1>
+    <button id="downloadBtn" class="mb-4 bg-groningenGreen text-white px-4 py-2 rounded">Download PDF</button>
+
+    <div id="bingo-board"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 max-w-full mx-auto">
+      <template id="bingo-cell-template">
+        <div class="flex flex-col items-center text-center cursor-pointer transition-all w-full">
+          <div class="location-name text-white text-xs sm:text-sm mb-1">Locatienaam</div>
+          <div
+            class="groningen-flag p-4 sm:p-6 h-32 sm:h-40 flex items-center justify-center text-wrap text-balance rounded-lg w-full">
+            <span class="text-sm sm:text-lg font-medium leading-snug">?</span>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+  <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg max-w-xs w-full">
+      <h2 id="modal-question" class="text-xl font-semibold mb-4">Vraag?</h2>
+      <div id="modal-options" class="space-y-2"></div>
+      <button id="closeModalBtn" class="mt-4 w-full bg-groningenGreen text-white px-4 py-2 rounded">Sluit</button>
+    </div>
+  </div>
+  <div id="map" class="z-0"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
