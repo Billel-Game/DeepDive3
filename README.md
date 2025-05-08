@@ -17,19 +17,24 @@ Een Bingo-spel op het web voor noorderpoort deepdive.
 🔧 Gebruikte Technologieën
 
     HTML, Tailwind CSS, JavaScript
+    
     Leaflet.js – voor de interactieve kaart
+    
     html2canvas en jsPDF – voor het genereren van PDF’s
 
 🧑‍💻 Project lokaal draaien
 
     Clone de repository:
-    git clone https://github.com/Billel-Game/DeepDive3.git
-    cd DeepDive3
+
+    git clone https://github.com/jouwgebruikersnaam/bingo-groningen.git
+    cd bingo-groningen
+
     Open index.html in je browser.
 
-    Je hebt geen server of build tools nodig — gewoon openen in de browser!
+        Je hebt geen server of build tools nodig — gewoon openen in de browser!
 
 📁 Bestandsstructuur
+
 /project-root
 │
 ├── index.html             # Hoofdpagina met spel en UI
