@@ -22,31 +22,8 @@ Een Bingo-spel op het web voor noorderpoort deepdive.
     
     html2canvas en jsPDF – voor het genereren van PDF’s
 
-🧑‍💻 Project lokaal draaien
-
-    Clone de repository:
-
-    git clone https://github.com/jouwgebruikersnaam/bingo-groningen.git
-    cd bingo-groningen
-
-    Open index.html in je browser.
-
-        Je hebt geen server of build tools nodig — gewoon openen in de browser!
         
 🎥 OneDrive Video
 
     <video link hier>
 
-📁 Bestandsstructuur
-
-/project-root
-
-│
-
-├── index.html             # Hoofdpagina met spel en UI
-
-├── flag.png               # Achtergrondafbeelding voor de bingo-vakken
-
-├── screenshot.png         # Optioneel: Screenshot van de app
-
-└── README.md              # Dit bestand
