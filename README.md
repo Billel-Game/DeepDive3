@@ -42,6 +42,9 @@ Een Bingo-spel op het web voor noorderpoort deepdive.
 /project-root
 │
 ├── index.html             # Hoofdpagina met spel en UI
+
 ├── flag.png               # Achtergrondafbeelding voor de bingo-vakken
+
 ├── screenshot.png         # Optioneel: Screenshot van de app
+
 └── README.md              # Dit bestand
